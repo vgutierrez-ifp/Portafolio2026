@@ -89,6 +89,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
         prevButton.addEventListener('click', () => showImage(currentImage - 1, 'previous'));
         nextButton.addEventListener('click', () => showImage(currentImage + 1, 'next'));
+        // Avance automático pausado para poder apreciar cada imagen.
         setInterval(() => showImage(currentImage + 1, 'next'), 6000);
+    });
+
+    // Alterna las dos versiones del logo PMV en el primer cuadro.
+    document.querySelectorAll('.logo-switcher').forEach(slideshow => {
+        const images = slideshow.querySelectorAll('img');
+        if (images.length < 2) return;
+
+        let currentImage = 0;
+        setInterval(() => {
+            images[currentImage].classList.remove('active');
+            currentImage = (currentImage + 1) % images.length;
+            images[currentImage].classList.add('active');
+        }, 5000);
     });
 });
