@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAAPA - Vanessa Gutiérrez</title>
+    <link rel="stylesheet" href="styles.css?v=header-unified-2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Space+Grotesk:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="project-page">
+
+    <header class="header">
+        <div class="brand-nav">
+            <a href="index.html"><h1 class="logo">Vanessa Gutiérrez</h1></a>
+            <span class="subtitle">(Diseñadora Gráfica)</span>
+        </div>
+        <nav class="nav">
+            <a href="info.html" class="info-btn">(info)</a>
+        </nav>
+    </header>
+
+    <!-- Layout de Proyecto: Columna Fija + Galería Scroll Horizontal -->
+    <main class="project-layout">
+        
+        <!-- Columna Izquierda (Sidebar Fija) -->
+        <aside class="project-sidebar">
+            <div class="sidebar-top">
+                <h2 class="sidebar-title">01. (eventos iaapa)</h2>
+                <p class="sidebar-desc">Diseño de stands, cartelería y elementos gráficos para el evento IAAPA en 2026. Se trabajó en la creación de una experiencia inmersiva para los asistentes, cuidando la distribución del espacio y el impacto visual de cada muro del stand.</p>
+                <p class="sidebar-meta">2026 & Adobe Illustrator, SketchUp</p>
+            </div>
+            
+            <div class="sidebar-bottom">
+                <p class="captions-title">(captions)</p>
+                <ul class="captions-list">
+                    <li>A. Vista Frontal Stand</li>
+                    <li>B. Perspectiva Lateral</li>
+                    <li>C. Detalles Gráficos</li>
+                    <li>D. Mesa de Atención</li>
+                    <li>E. Elementos Decorativos</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Columna Derecha (Galería) -->
+        <section class="project-gallery">
+            <button class="gallery-arrow gallery-prev" type="button" aria-label="Ver imagen anterior"></button>
+            <div class="project-gallery-images">
+                <img src="Proyectos/eventos/iaapa/1.JPG" alt="IAAPA Frontal" class="active">
+                <img src="Proyectos/eventos/iaapa/2.JPG" alt="IAAPA Lateral">
+                <img src="Proyectos/eventos/iaapa/3.JPG" alt="IAAPA Detalles">
+                <img src="Proyectos/eventos/iaapa/4.JPG" alt="IAAPA Mesa">
+                <img src="Proyectos/eventos/iaapa/5.jpg" alt="IAAPA Deco">
+            </div>
+            <button class="gallery-arrow gallery-next" type="button" aria-label="Ver imagen siguiente"></button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
